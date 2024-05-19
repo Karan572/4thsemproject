@@ -109,3 +109,55 @@ button:hover {
         font-size: 12px;
     }
 }
+/* new  */
+img {
+    width: 73px;
+    height: 62px;
+  }
+
+
+  #taskList li {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+  }
+
+  #taskList li::before {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(/TodoApplication/Resources/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+  }
+
+  #taskList li.checked {
+    color: #555;
+    text-decoration: line-through;
+  }
+
+  #taskList li.checked::before {
+    background-image: url(/TodoApplication/Resources/checked.png);
+    background-color: orange;
+  }
+
+  #taskList li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 32px;
+    columns: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  #taskList li span:hover {
+    background: #edeef0;
+  }
