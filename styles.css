@@ -169,13 +169,28 @@ img {
     height: 62px;
   }
 
+#taskList {
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    list-style: none; /* Remove default list item markers */
+    margin: 0 auto;
+    text-align: left;
+}
 
-  #taskList li {
+#taskList li {
+    padding: 10px 10px 10px 40px; /* Add padding to the left to make space for the icon */
+    border-bottom: 1px solid #ddd;
     cursor: pointer;
     user-select: none;
     position: relative;
-  }
+    word-wrap: break-word; /* Ensure long text wraps within the list item */
+}
 
+#taskList li:last-child {
+    border-bottom: none;
+}
   #taskList li::before {
     content: "";
     position: absolute;
