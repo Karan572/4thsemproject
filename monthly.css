@@ -155,7 +155,7 @@ body{
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(/TodoApplication/Resources/unchecked.png);
+    background-image: url(unchecked.png);
     background-size: cover;
     background-position: center;
     top: 12px;
@@ -168,7 +168,7 @@ body{
   }
 
   #taskList li.checked::before {
-    background-image: url(/TodoApplication/Resources/checked.png);
+    background-image: url(checked.png);
     background-color: orange;
   }
 
